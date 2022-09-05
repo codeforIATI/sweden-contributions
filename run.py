@@ -15,14 +15,20 @@ iati_identifiers = list(identifiers_data.keys())
 os.makedirs('output', exist_ok=True)
 contributions = {}
 for iati_identifier in iati_identifiers:
-    matches = re.match('(.*)-(.*)-(.*)$', iati_identifier)
+    # We only run this for Sida data
+    if not iati_identifier.startswith('SE-0-SE-6'): continue
+    matches = re.match('SE-0-SE-6-(.*)-(.*)-(.*)$', iati_identifier)
     if not matches:
         print("Cannot match for {}".format(iati_identifier))
         continue
     _contrib, _country, _sector = matches.groups()
     _corrected_contrib = _contrib.split("A")
-    if _corrected_contrib is not None:
+
+    if len(_corrected_contrib) == 2:
         _contrib = _corrected_contrib[0]
+    else:
+        _contrib = _contrib[0:8]
+
     if _country not in contributions.keys():
         contributions[_country] = {}
     if _contrib not in contributions[_country].keys():
