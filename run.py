@@ -20,6 +20,9 @@ for iati_identifier in iati_identifiers:
         print("Cannot match for {}".format(iati_identifier))
         continue
     _contrib, _country, _sector = matches.groups()
+    _corrected_contrib = _contrib.split("A")
+    if _corrected_contrib:
+        _contrib = _corrected_contrib[0]
     if _country not in contributions.keys():
         contributions[_country] = {}
     if _contrib not in contributions[_country].keys():
@@ -33,3 +36,8 @@ for country_code, country_data in contributions.items():
         continue
     with open('output/{}.json'.format(iso2_country_code), 'w') as outfile:
         json.dump(country_data, outfile)
+
+    os.makedirs(os.path.join('output', iso2_country_code), exist_ok=True)
+    for contribution_code, iati_identifiers in country_data.items():
+        with open('output/{}/{}.json'.format(iso2_country_code, contribution_code), 'w') as outfile:
+            json.dump(iati_identifiers, outfile)
