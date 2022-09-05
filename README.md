@@ -32,3 +32,8 @@ There are also index files making the API easy to explore:
 * [/index.json](https://codeforiati.org/sweden-contributions/index.json) lists countries with lists of contribution codes
 * [/LR/index.json](https://codeforiati.org/sweden-contributions/LR/index.json) lists all the contribution code files for a specific country (in this case, Liberia)
 
+## Why does Sweden break its activities down in this way?
+
+From memory, the reason for this is that it allows Sweden to express country and sector allocations for `budget` elements. Currently in the IATI Standard, country and sector allocations can be expressed for transactions (e.g. commitments and disbursements), but not for budgets.
+
+So there are good reasons for Sweden publishing the data the way it does; but it means that users need to know that there are multiple activities for each contribution, in order to get the complete set of data they are interested in.
