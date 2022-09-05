@@ -44,7 +44,7 @@ for country_code, country_data in contributions.items():
         with open('output/{}/{}.json'.format(iso2_country_code, contribution_code), 'w') as outfile:
             json.dump(iati_identifiers, outfile)
     with open('output/{}/index.json'.format(iso2_country_code), 'w') as out_country_index:
-        json.dump([f"{contribution_code}.json" for countribution_code in sorted(country_data.keys())], out_country_index)
+        json.dump([f"{contribution_code}.json" for contribution_code in sorted(country_data.keys())], out_country_index)
 
     index_countries[iso2_country_code] = f"{iso2_country_code}/index.json"
 
