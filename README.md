@@ -36,10 +36,11 @@ e.g. for **Markets & Value Chains in Agriculture Liberia**:
 ```
 
 For this same contribution code `52090011` there are four activities:
-[SE-0-SE-6-5209001101-LBR-31120](https://datastore.codeforiati.org/api/1/access/activity.xml?iati-identifier=SE-0-SE-6-5209001101-LBR-31120)
-[SE-0-SE-6-5209001102-LBR-31120](https://datastore.codeforiati.org/api/1/access/activity.xml?iati-identifier=SE-0-SE-6-5209001102-LBR-31120)
-[SE-0-SE-6-5209001103-LBR-31120](https://datastore.codeforiati.org/api/1/access/activity.xml?iati-identifier=SE-0-SE-6-5209001103-LBR-31120)
-[SE-0-SE-6-5209001104-LBR-31120](https://datastore.codeforiati.org/api/1/access/activity.xml?iati-identifier=SE-0-SE-6-5209001104-LBR-31120)
+
+* [SE-0-SE-6-5209001101-LBR-31120](https://datastore.codeforiati.org/api/1/access/activity.xml?iati-identifier=SE-0-SE-6-5209001101-LBR-31120)
+* [SE-0-SE-6-5209001102-LBR-31120](https://datastore.codeforiati.org/api/1/access/activity.xml?iati-identifier=SE-0-SE-6-5209001102-LBR-31120)
+* [SE-0-SE-6-5209001103-LBR-31120](https://datastore.codeforiati.org/api/1/access/activity.xml?iati-identifier=SE-0-SE-6-5209001103-LBR-31120)
+* [SE-0-SE-6-5209001104-LBR-31120](https://datastore.codeforiati.org/api/1/access/activity.xml?iati-identifier=SE-0-SE-6-5209001104-LBR-31120)
 
 ---
 
